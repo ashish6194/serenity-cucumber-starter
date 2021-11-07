@@ -22,11 +22,11 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn -B verify --file pom.xml
+      continue-on-error: true
     - name: Deploy report page
-      if: always()
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+        publish_dir: ./target/site
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
