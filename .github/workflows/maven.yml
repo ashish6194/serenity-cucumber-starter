@@ -23,6 +23,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B verify --file pom.xml
     - name: Deploy report page
+      if: always()
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
