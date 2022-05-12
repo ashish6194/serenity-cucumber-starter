@@ -1,7 +1,11 @@
 # This workflow will build a Java project with Maven
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: Maven Build
+name: 'Upload Cucumber to Zephyr Scale'
+env:
+  zephyr-api-key:NGUyY2I3YTUtNzI3NC0zMTZkLTg5YzAtZDE4ZTc4ZGRiOTgwIDYxYzdkN2UzODUzNDk4MDA3MzJlOTY0OCBVU0VSX0RFRkFVTFRfTkFNRQ
+  project-key:QA
+  file-path:target/cucumber-reports/Cucumber.json
 
 on:
   push:
@@ -32,3 +36,14 @@ jobs:
         publish_dir: ./target/site/serenity/
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
+    - name: Compressing Cucumber JSON to ZIP
+        run: zip result.zip ${{ env.file-path }}
+        shell: bash
+          - name: Sending result to Zephyr Scale API
+            run: |
+              curl --request POST \
+                  --url 'https://api.adaptavist.io/tm4j/v2/automations/executions/cucumber?projectKey=${{ env.project-key }}&autoCreateTestCases=false' \
+                  --header 'Authorization: Bearer ${{ env.zephyr-api-key }}' \
+                  --header 'content-type: multipart/form-data' \
+                  --form "file=result.zip;type=application/x-zip-compressed"
+            shell: bash
