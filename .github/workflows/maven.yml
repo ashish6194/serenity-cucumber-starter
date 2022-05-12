@@ -31,7 +31,7 @@ jobs:
     - name: Sending result to Zephyr Scale API
       run: |
         curl --request POST \
-            --url 'https://api.adaptavist.io/tm4j/v2/automations/executions/cucumber?projectKey=QA&autoCreateTestCases=false' \
+            --url 'https://api.zephyrscale.smartbear.com/tm4j/v2/automations/executions/cucumber?projectKey=QA&autoCreateTestCases=false' \
             --header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ZTJjYjdhNS03Mjc0LTMxNmQtODljMC1kMThlNzhkZGI5ODAiLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvYnluZm9yZG9jLmF0bGFzc2lhbi5uZXQiLCJ1c2VyIjp7ImFjY291bnRJZCI6IjYxYzdkN2UzODUzNDk4MDA3MzJlOTY0OCJ9fSwiaXNzIjoiY29tLmthbm9haC50ZXN0LW1hbmFnZXIiLCJleHAiOjE2ODM4ODk3NzUsImlhdCI6MTY1MjM1Mzc3NX0.zort6z5PngXuLIq-1PgyVHAZ-IrQEF8vZ46aJlhh2Sk' \
             --header 'content-type: multipart/form-data' \
             --form "file=result.zip;type=application/x-zip-compressed"
