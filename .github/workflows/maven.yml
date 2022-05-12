@@ -2,16 +2,17 @@
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
 name: 'Upload Cucumber to Zephyr Scale'
-env:
-  zephyr-api-key:NGUyY2I3YTUtNzI3NC0zMTZkLTg5YzAtZDE4ZTc4ZGRiOTgwIDYxYzdkN2UzODUzNDk4MDA3MzJlOTY0OCBVU0VSX0RFRkFVTFRfTkFNRQ
-  project-key:QA
-  file-path:target/cucumber-reports/Cucumber.json
 
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+
+env:
+  zephyr_api_key:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ZTJjYjdhNS03Mjc0LTMxNmQtODljMC1kMThlNzhkZGI5ODAiLCJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczpcL1wvYnluZm9yZG9jLmF0bGFzc2lhbi5uZXQiLCJ1c2VyIjp7ImFjY291bnRJZCI6IjYxYzdkN2UzODUzNDk4MDA3MzJlOTY0OCJ9fSwiaXNzIjoiY29tLmthbm9haC50ZXN0LW1hbmFnZXIiLCJleHAiOjE2ODM4ODk3NzUsImlhdCI6MTY1MjM1Mzc3NX0.zort6z5PngXuLIq-1PgyVHAZ-IrQEF8vZ46aJlhh2Sk
+  project_key:QA
+  file_path:target/cucumber-reports/Cucumber.json
 
 jobs:
   build:
