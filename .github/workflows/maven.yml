@@ -32,11 +32,11 @@ jobs:
     - name: Compressing Cucumber JSON to ZIP
       run: zip result.zip ${{ env.file-path }}
       shell: bash
-      - name: Sending result to Zephyr Scale API
-        run: |
-          curl --request POST \
-              --url 'https://api.adaptavist.io/tm4j/v2/automations/executions/cucumber?projectKey=${{ env.project-key }}&autoCreateTestCases=false' \
-              --header 'Authorization: Bearer ${{ env.zephyr-api-key }}' \
-              --header 'content-type: multipart/form-data' \
-              --form "file=result.zip;type=application/x-zip-compressed"
-        shell: bash
+    - name: Sending result to Zephyr Scale API
+      run: |
+        curl --request POST \
+            --url 'https://api.adaptavist.io/tm4j/v2/automations/executions/cucumber?projectKey=${{ env.project-key }}&autoCreateTestCases=false' \
+            --header 'Authorization: Bearer ${{ env.zephyr-api-key }}' \
+            --header 'content-type: multipart/form-data' \
+            --form "file=result.zip;type=application/x-zip-compressed"
+      shell: bash
