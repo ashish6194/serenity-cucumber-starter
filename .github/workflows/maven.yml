@@ -27,7 +27,6 @@ jobs:
       continue-on-error: true
     - name: Sending result to Zephyr Scale API
       run: |
-        cd target/cucumber-reports/
         curl -X POST https://c4j.cucumber.io/ci/rest/api/results \
         -H 'authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjb20uc21hcnRiZWFyLmN1Y3VtYmVyIiwiYXVkIjoiY2kiLCJjb250ZXh0Ijp7ImxpdmluZ19kb2NfaWQiOjMwNzd9LCJpYXQiOjE2NTIzNjg4MTl9.YcNfnJUbvQvugnGMAA8diKJEP2pbQr49WQlun5jACug' \
         -H 'content-type: multipart/form-data' \
