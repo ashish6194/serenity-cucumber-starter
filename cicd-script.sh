@@ -19,7 +19,7 @@ zephyrBaseUrl="https://prod-api.zephyr4jiracloud.com/connect"
 accessKey="NGUyY2I3YTUtNzI3NC0zMTZkLTg5YzAtZDE4ZTc4ZGRiOTgwIDYxYzdkN2UzODUzNDk4MDA3MzJlOTY0OCBVU0VSX0RFRkFVTFRfTkFNRQ"
 secretKey="VKRp-QkO9p1A5n_OhDU-fPIgxnJFZWeE85J_mE1AVlY"
 # Id of the user who will create the automation task. You can find it in Jira.
-accountId="557058:61c7d7e385349800732e9648"
+accountId="61c7d7e385349800732e9648"
 
 #######################################################################
 #  Create a JSON Web Token  (required to access Zephyr for Jira).
@@ -52,7 +52,7 @@ appendDateTimeInCycleName="false"
 folderName="RegressionTests"
 createNewFolder="true"
 appendDateTimeInFolderName="true"
-assigneeUser="557058:61c7d7e385349800732e9648"
+assigneeUser="61c7d7e385349800732e9648"
 
 # Name of the test result file
 resultPath="@//target/cucumber-reports/Cucumber.json"
