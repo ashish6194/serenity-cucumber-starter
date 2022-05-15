@@ -17,6 +17,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 17
+        distribution: 'temurin'
+        cache: maven
     - name: Sending result to Zephyr Scale API
-      run: cicd-script.sh
+      run: ./cicd-script.sh
       
