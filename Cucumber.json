@@ -1,0 +1,164 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-12T13:24:22.565Z",
+        "before": [
+          {
+            "result": {
+              "duration": 30684000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "starter.stepdefinitions.ParameterDefinitions.setTheStage()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Searching for a term",
+        "description": "",
+        "id": "search-by-keyword;searching-for-a-term",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5588549000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am researching things on the internet",
+            "match": {
+              "location": "starter.stepdefinitions.SearchStepDefinitions.iAmResearchingThingsOnTheInternet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3351254000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I looks up \"Cucumber\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cucumber\"",
+                  "offset": 11
+                }
+              ],
+              "location": "starter.stepdefinitions.SearchStepDefinitions.searchesFor(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36327000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should see information about \"Cucumber\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cucumber\"",
+                  "offset": 31
+                }
+              ],
+              "location": "starter.stepdefinitions.SearchStepDefinitions.should_see_information_about(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestCaseKey\u003dQA-12"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-12T13:24:32.787Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2813000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "starter.stepdefinitions.ParameterDefinitions.setTheStage()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "(Fail) Searching for a term",
+        "description": "",
+        "id": "search-by-keyword;(fail)-searching-for-a-term",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1692938000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am researching things on the internet",
+            "match": {
+              "location": "starter.stepdefinitions.SearchStepDefinitions.iAmResearchingThingsOnTheInternet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1720274000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I looks up \"Cucumber\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cucumber\"",
+                  "offset": 11
+                }
+              ],
+              "location": "starter.stepdefinitions.SearchStepDefinitions.searchesFor(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: The wiki article is not about Serenity\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat starter.stepdefinitions.SearchStepDefinitions.should_see_information_about(SearchStepDefinitions.java:29)\n\tat ✽.I should see information about \"Serenity\"(file:///Users/ashishsharma/Documents/Automation%20learn/serenity-cucumber-starter/src/test/resources/features/search/search_by_keyword.feature:13)\n",
+              "duration": 36836000,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "I should see information about \"Serenity\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Serenity\"",
+                  "offset": 31
+                }
+              ],
+              "location": "starter.stepdefinitions.SearchStepDefinitions.should_see_information_about(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestCaseKey\u003dQA-13"
+          }
+        ]
+      }
+    ],
+    "name": "Search by keyword",
+    "description": "",
+    "id": "search-by-keyword",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/search/search_by_keyword.feature",
+    "tags": []
+  }
+]

@@ -55,7 +55,7 @@ appendDateTimeInFolderName="true"
 assigneeUser="61c7d7e385349800732e9648"
 
 # Name of the test result file
-resultPath="@//target/cucumber-reports/Cucumber.json"
+resultPath="@Cucumber.json"
 
 #######################################################################
 #  Create an automation task, run it, send test results to Zephyr.
