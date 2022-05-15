@@ -26,7 +26,7 @@ accountId="557058:61c7d7e385349800732e9648"
 #  Keep this section as it is.
 #######################################################################
 echo "Generating a JSOM Web Token ... \n"
-curl -o headers -s -d '{  "accessKey": "'"$accessKey"'"  , "secretKey": "'"$secretKey"'" ,"accountId": "'"$accountId"'","zephyrBaseUrl": "'"$zephyrBaseUrl"'","expirationTime":360000}' -H "Content-Type: application/json" -XPOST https://prod-vortexapi.zephyr4jiracloud.com/api/v1/jwt/generate
+curl -o headers -s -v -d '{  "accessKey": "'"$accessKey"'"  , "secretKey": "'"$secretKey"'" ,"accountId": "'"$accountId"'","zephyrBaseUrl": "'"$zephyrBaseUrl"'","expirationTime":360000}' -H "Content-Type: application/json" -XPOST https://prod-vortexapi.zephyr4jiracloud.com/api/v1/jwt/generate
 jwt="$(cat  headers | head -n 1)"
 echo "The generated token: \n"
 echo $jwt
