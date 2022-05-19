@@ -1,4 +1,4 @@
-
+echo ${{ github.workspace }}
 ######################################################################
 #  This .sh file demonstrates how to create or update an automation task in Zephyr for Jira Cloud, run this task, and publish test results to Zephyr.
 #  Author: SmartBear Software
