@@ -1,1 +1,2 @@
 echo $github.workspace
+ls
