@@ -17,10 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: copy file
-        uses: canastro/copy-file-action@master
-        with:
-          source: ".github/workflows/gradle.yml"
-          target: "gradle.yml"
+        run: cp .github/workflows/gradle.yml gradle.yml
           
       - name: check file
         run: ls -al
