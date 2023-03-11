@@ -138,6 +138,9 @@
                         <version>${serenity.version}</version>
                     </dependency>
                 </dependencies>
+                <configuration>
+                  <reports>single-page-html,navigator</reports> 
+                </configuration>
                 <executions>
                     <execution>
                         <id>serenity-reports</id>
