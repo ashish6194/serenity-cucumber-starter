@@ -129,7 +129,7 @@
                 <artifactId>serenity-maven-plugin</artifactId>
                 <version>${serenity.maven.version}</version>
                 <configuration>
-                    <tags>${tags}</tags>
+                  <reports>single-page-html,navigator</reports> 
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -138,9 +138,6 @@
                         <version>${serenity.version}</version>
                     </dependency>
                 </dependencies>
-                <configuration>
-                  <reports>single-page-html,navigator</reports> 
-                </configuration>
                 <executions>
                     <execution>
                         <id>serenity-reports</id>
