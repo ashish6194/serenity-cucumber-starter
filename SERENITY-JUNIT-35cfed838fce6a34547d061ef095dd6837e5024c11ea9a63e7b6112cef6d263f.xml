@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Search by keyword" skipped="0" tests="2" time="7.93" timestamp="2023-03-11 08:44:21"><testcase name="Searching for a term"/><testcase name="(Fail) Searching for a term"><failure message="The wiki article is not about Serenity" type="java.lang.AssertionError">The wiki article is not about Serenity</failure><system-err>The wiki article is not about Serenity
+cucumber.starter@1.0.0-SNAPSHOT/starter.stepdefinitions.SearchStepDefinitions.should_see_information_about(SearchStepDefinitions.java:29)
+✽.I should see information about "Serenity"(file:///home/runner/work/serenity-cucumber-starter/serenity-cucumber-starter/src/test/resources/features/search/search_by_keyword.feature:11)
+</system-err></testcase></testsuite>
