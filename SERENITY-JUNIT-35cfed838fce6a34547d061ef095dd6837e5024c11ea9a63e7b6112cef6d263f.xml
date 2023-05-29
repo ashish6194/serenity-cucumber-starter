@@ -1,1 +1,32 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Search by keyword" skipped="0" tests="1" time="14.86" timestamp="2023-03-11 11:32:49"><testcase name="Searching for a term"/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Search by keyword" skipped="0" tests="1" time="3.41" timestamp="2023-05-29 04:47:14"><testcase name="Searching for a term"><error message="WebDriver was unable to create a new instance of type class org.openqa.selenium.chrome.ChromeDriver&#10;WebDriver reported the following message: Unable to establish websocket connection to http://localhost:37319/devtools/browser/f2fc393e-c456-4d98-aede-b22f5e874657&#10;Build info: version: '4.7.1', revision: 'c6795baf1a3'&#10;System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-1037-azure', java.version: '17.0.7'&#10;Driver info: driver.version: ChromeDriver&#10;See below for more details." type="net.thucydides.core.webdriver.DriverConfigurationError">WebDriver was unable to create a new instance of type class org.openqa.selenium.chrome.ChromeDriver
+WebDriver reported the following message: Unable to establish websocket connection to http://localhost:37319/devtools/browser/f2fc393e-c456-4d98-aede-b22f5e874657
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-1037-azure', java.version: '17.0.7'
+Driver info: driver.version: ChromeDriver
+See below for more details.</error><system-err>WebDriver was unable to create a new instance of type class org.openqa.selenium.chrome.ChromeDriver
+WebDriver reported the following message: Unable to establish websocket connection to http://localhost:37319/devtools/browser/f2fc393e-c456-4d98-aede-b22f5e874657
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-1037-azure', java.version: '17.0.7'
+Driver info: driver.version: ChromeDriver
+See below for more details.
+cucumber.starter@1.0.0-SNAPSHOT/starter.stepdefinitions.SearchStepDefinitions.iAmResearchingThingsOnTheInternet(SearchStepDefinitions.java:18)
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+io.cucumber.java.Invoker.invoke(Invoker.java:24)
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)
+</system-err></testcase></testsuite>
